@@ -1,5 +1,5 @@
 resource "aws_instance" "web" {
-  ami           = data.aws_ami.ubuntu.id
+  ami           = "ami-0453ec754f44f9a4a"
   instance_type = "t3.micro"
 
   tags = {
@@ -7,15 +7,15 @@ resource "aws_instance" "web" {
   }
 }
 
-data "aws_ami" "ubuntu" {
-  most_recent = true
-  owners      = ["amazon"]
-  filter {
-    name   = "architecture"
-    values = ["arm64"]
-  }
-  filter {
-    name   = "name"
-    values = ["al2023-ami-2023*"]
-  }
-}
+# data "aws_ami" "ubuntu" {
+#   most_recent = true
+#   owners      = ["amazon"]
+#   filter {
+#     name   = "architecture"
+#     values = ["arm64"]
+#   }
+#   filter {
+#     name   = "name"
+#     values = ["al2023-ami-2023*"]
+#   }
+# }
