@@ -19,3 +19,13 @@ resource "aws_instance" "web" {
 #     values = ["al2023-ami-2023*"]
 #   }
 # }
+
+
+resource "aws_instance" "web2" {
+  ami           = "ami-0453ec754f44f9a4a"
+  instance_type = "t2.micro"
+
+  tags = {
+    Name = "HelloWorld"
+  }
+}
