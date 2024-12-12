@@ -86,3 +86,8 @@ c.	Build A Pipeline
 
 d.	Configure Pipeline Deploy Code From a Github Repository. 
 	In the space, paste the scripted pipeline provided. 
+
+
+
+## 6 Install Terraform on Server 
+
