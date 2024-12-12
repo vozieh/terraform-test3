@@ -84,4 +84,4 @@ b.	Follow Onscreen Instructions to configure Jenkins
 c.	Build A Pipeline 
 
 d.	Configure Pipeline Deploy Code From a Github Repository. 
-	In the space, pace the scripted pipeline provided. 
+	In the space, paste the scripted pipeline provided. 
