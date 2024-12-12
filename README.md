@@ -15,8 +15,7 @@ d)	 +**`key pair`** : attached a keypair to enable SSH connectivity to instance.
 e)	Create and IAM Role with **`admin privileges`** and attached role to EC2 instance
 
 f)	Adjust Iam role trust relationship to enable the role can be assumed by itself **(necessary for the build server to use the role)**
-    ````
-
+   
         {
             "Version": "2012-10-17",
             "Statement": [
@@ -35,9 +34,7 @@ f)	Adjust Iam role trust relationship to enable the role can be assumed by itsel
                      "Action": "sts:AssumeRole"
         }
     ]
-}
-
-    ```
+    }
 
 
 g)	Install **[AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)** on Server and and configure Server without credentials **(no Access and Secret Keys)**
