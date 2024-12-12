@@ -24,6 +24,7 @@ h)	aws sts get-caller-identity  —> this should return the role
 
 
 
+
 ## 2 [Install Jenkins](https://www.jenkins.io/doc/book/installing/linux/#debianubuntu) with below commands. 
 
 Downloads the GPG key required to verify the authenticity of Jenkins packages and saves it in the /usr/share/keyrings/ directory.
@@ -39,3 +40,49 @@ Update and Install Jenkins
 
     sudo apt-get update
     sudo apt-get install jenkins
+
+
+
+
+
+## 3 Install JAVA (a prerequisite for Jenkins)
+
+        sudo apt update
+
+Add required dependencies for the jenkins package
+
+    sudo apt install fontconfig openjdk-17-jre -y
+
+Verify Java Installation 
+
+    java -version 
+
+
+
+
+## 4  Start Jenkins and Access Jenkins UI
+
+You can enable the Jenkins service to start at boot with the command:
+
+    sudo systemctl enable jenkins
+
+Start the Jenkins service
+
+    sudo systemctl start jenkins
+
+
+Check the status of the Jenkins service
+
+    sudo systemctl status jenkins
+
+
+## 5 	Access UI
+	
+a.	 On browser, paste http://<public-IP-jenkins-server>:8080
+
+b.	Follow Onscreen Instructions to configure Jenkins 
+
+c.	Build A Pipeline 
+
+d.	Configure Pipeline Deploy Code From a Github Repository. 
+	In the space, pace the scripted pipeline provided. 
