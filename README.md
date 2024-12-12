@@ -17,10 +17,10 @@ e)	Create and IAM Role with **`admin privileges`** and attached role to EC2 inst
 f)	Adjust Iam role trust relationship to enable the role can be assumed by itself **(necessary for the build server to use the role)**
 
 g)	Install **[AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)** on Server and and configure Server without credentials **(no Access and Secret Keys)**
+    sudo snap install aws-cli --classic
 
 h)	**`Test`** : 
     aws sts get-caller-identity  —> this should return the role 
-
 
 
 
