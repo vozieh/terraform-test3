@@ -16,22 +16,23 @@ e)	Create and IAM Role with **`admin privileges`** and attached role to EC2 inst
 
 f)	Adjust Iam role trust relationship to enable the role can be assumed by itself **(necessary for the build server to use the role)**
     ````
+
         {
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Effect": "Allow",
-            "Principal": {
-                "Service": "ec2.amazonaws.com"
-            },
-            "Action": "sts:AssumeRole"
-        },
-        {
-            "Effect": "Allow",
-            "Principal": {
-                "AWS": "arn:aws:iam::666572520784:role/admin"
-            },
-            "Action": "sts:AssumeRole"
+            "Version": "2012-10-17",
+            "Statement": [
+                {
+                    "Effect": "Allow",
+                    "Principal": {
+                     "Service": "ec2.amazonaws.com"
+                    },
+                     "Action": "sts:AssumeRole"
+                },
+                {
+                    "Effect": "Allow",
+                     "Principal": {
+                     "AWS": "arn:aws:iam::666572520784:role/admin"
+                    },
+                     "Action": "sts:AssumeRole"
         }
     ]
 }
