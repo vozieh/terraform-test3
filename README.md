@@ -140,7 +140,9 @@ Verify Terraform has been Installed
 
 
 
-## 7 Configure Jenkins Jobs to Poll SCM system automatically every 5 minutes 
+## 7 Configure Simple Build Job using the Pipeline plugin 
+
+## 8 Configure Jenkins Jobs to Poll SCM system automatically every 5 minutes 
 
 
 ## 8 Configure GitHub Hooks So a Jenkins Build is triggered when code is committed to Repo
