@@ -1,5 +1,4 @@
-# Basic IAC CICD Deployment using Jenkins as automation server
-
+# Basic IAC CI-CD Deployment using Jenkins as automation server
 
 
 
@@ -78,7 +77,7 @@ Check the status of the Jenkins service
 
 ## 5 	Access UI
 	
-a.	 On browser, paste http://<public-IP-jenkins-server>:8080
+a.	 On browser, paste http://`<public-IP-jenkins-server>`:8080
 
 b.	Follow Onscreen Instructions to configure Jenkins 
 
