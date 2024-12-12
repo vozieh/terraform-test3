@@ -136,3 +136,11 @@ Update packages and Install terraform
 Verify Terraform has been Installed 
 
     terraform -help
+
+
+
+
+## 7 Configure Jenkins Jobs to Poll SCM system automatically every 5 minutes 
+
+
+## 8 Configure GitHub Hooks So a Jenkins Build is triggered when code is committed to Repo
