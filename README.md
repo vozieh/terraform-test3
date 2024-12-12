@@ -97,6 +97,7 @@ Check the status of the Jenkins service
     sudo systemctl status jenkins
 
 
+
 ## 5 	Access UI
 	
 a.	 On browser, paste http://`<public-IP-jenkins-server>`:8080
@@ -110,5 +111,28 @@ d.	Configure Pipeline Deploy Code From a Github Repository.
 
 
 
-## 6 Install Terraform on Server 
 
+## 6 [Install Terraform](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli) on Server 
+
+Ensure that your system is up to date and you have installed the gnupg, software-properties-common, and curl packages installed. You will use these packages to verify HashiCorp's GPG signature and install HashiCorp's Debian package repository.
+
+    sudo apt-get update && sudo apt-get install -y gnupg software-properties-common
+
+Install the HashiCorp GPG key.
+
+    wget -O- https://apt.releases.hashicorp.com/gpg | gpg --dearmor | sudo tee /usr/share/keyrings/hashicorp-archive-keyring.gpg > /dev/null
+
+
+Add the official HashiCorp repository to your system. 
+
+    echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
+
+
+Update packages and Install terraform 
+
+    sudo apt update
+    sudo apt-get install terraform
+
+Verify Terraform has been Installed 
+
+    terraform -help
