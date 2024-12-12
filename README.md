@@ -10,7 +10,7 @@ b)	 **`type/size`**  ubuntu: t2.medium (4G RAM requirement)
 
 c)	 **`SG`** : open all traffic to 0.0.0.0/0
 
-d)	 +**`key pair`** : attached a keypair to enable SSH connectivity to instance. 
+d)	 **`key pair`** : attached a keypair to enable SSH connectivity to instance. 
 
 e)	Create and IAM Role with **`admin privileges`** and attached role to EC2 instance
 
