@@ -23,7 +23,7 @@ pipeline {
         stage('Apply Terraform') {
             steps {
                 input(message: 'Approve deployment?', ok: 'Approve', cancel: 'Cancel')
-                sh 'terraform apply tfplan'
+                sh 'terraform apply 'tfplan''
             }
         }
     }
